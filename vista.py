@@ -6,7 +6,7 @@ import os
 class Vista(QMainWindow):
     def __init__(self,ppal = None):
         super().__init__(ppal)
-        loadUi('c:/Users/David.R/Downloads/clasetaller2-main/clasetaller2-main/base.ui', self)
+        loadUi('c:/Users/David.R/Documents/entregable final/ventana_login', self)
         self.setup()
 
     def setup(self):
