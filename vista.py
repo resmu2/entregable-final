@@ -26,7 +26,7 @@ class Vista(QMainWindow):
 class VentanaImg(QDialog):
     def __init__(self,ppal=None):
         super().__init__(ppal)
-        loadUi("c:/Users/David.R/Documents/entregable final/ventana_img",self)
+        loadUi("c:/Users/David.R/Documents/entregable final/ventana_img.ui",self)
         self.__ventana_login = ppal
         self.setup()
 
