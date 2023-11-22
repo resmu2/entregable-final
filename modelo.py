@@ -10,3 +10,15 @@ class Modelo():
     def picture_img(self, img):
         ds = pydicom.dcmread(self._carpeta+'/'+img)
         pixel_data = ds.pixel_array
+        if (len(pixel_data.shape))==3:
+            slice_index = pixel_data.shape[0] // 2
+            selected_slice = pixel_data[slice_index, :, :]
+            plt.imshow(selected_slice, cmap=plt.cm.bone)
+        else:
+            plt.imshow(pixel_data, cmap=plt.cm.bone)
+
+    def Info(self,data):
+        info = pydicom.dcmread(self._carpeta+'/'+data)
+        nombre = info.Patient_name
+        ID = info.Patient_ID
+        P_body = info.Body_part

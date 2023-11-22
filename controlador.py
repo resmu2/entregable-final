@@ -9,6 +9,9 @@ class Controlador:
 
     def img(self,imagen):
         self.modelo.picture_img(imagen)
+    
+    def info_P(self,data):
+        self.modelo.Info(data)
 
 def main():
     app = QApplication(sys.argv)

@@ -40,3 +40,4 @@ class VentanaImg(QDialog):
     def cargar(self):
         imagen = self.comboBox.currentText()
         self.__ventana_login.controlador().img(imagen)
+        self.__ventana_login.controlador().info_P(imagen)
