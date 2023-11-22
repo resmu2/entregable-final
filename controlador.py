@@ -7,8 +7,8 @@ class Controlador:
         self.modelo = modelo
         self.vista = vista
 
-    def img(self):
-        pass
+    def img(self,imagen):
+        self.modelo.picture_img(imagen)
 
 def main():
     app = QApplication(sys.argv)
