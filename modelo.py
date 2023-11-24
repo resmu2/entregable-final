@@ -4,8 +4,6 @@ import matplotlib.pyplot as plt
 class Modelo():
     def __init__(self):
         self._carpeta = 'c:/Users/David.R/Documents/entregable final/Circle of Willis'
-        self.__usuario = 'medicoAnalitico'
-        self.__contrasena = 'bio12345'
     
     def picture_img(self, img):
         ds = pydicom.dcmread(self._carpeta+'/'+img)
@@ -19,6 +17,6 @@ class Modelo():
 
     def Info(self,data):
         info = pydicom.dcmread(self._carpeta+'/'+data)
-        nombre = info.Patient_name
-        ID = info.Patient_ID
-        P_body = info.Body_part
+        nombre = info.PatientName
+        ID = info.PatientID
+        P_body = info.BodyPartExamined

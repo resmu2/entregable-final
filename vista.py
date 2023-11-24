@@ -4,33 +4,33 @@ from PyQt5.uic import loadUi
 import os
 
 class Vista(QMainWindow):
-    def __init__(self,ppal = None):
+    def __init__(self,coordinador = None,ppal = None):
         super().__init__(ppal)
-        loadUi('c:/Users/David.R/Documents/entregable final/ventana_login', self)
-        self.setup()
+        self.__miCoordinador = coordinador
+        loadUi('c:/Users/David.R/Documents/entregable final/Ventana_Login.ui', self)
 
     def setup(self):
         self.I_sesion.clicked.connect(self.abrirVentanaimg)
-    
-    def addControlador(self,c):
-        self.__miCoordinador = c
-    
+
     def controlador(self):
         return self.__miCoordinador
     
     def abrirVentanaimg(self):
         ventana_img = VentanaImg(self)
-        self.hide()
-        ventana_img.show()
+        user = self.name.text()
+        password = self.ingreso.text()
+        if user == 'medicoAnalitico' and password == 'bio12345':
+            self.hide()
+            ventana_img.show()
 
 class VentanaImg(QDialog):
     def __init__(self,ppal=None):
         super().__init__(ppal)
-        loadUi("c:/Users/David.R/Documents/entregable final/ventana_img.ui",self)
+        loadUi("c:/Users/David.R/Documents/entregable final/Ventana_Img.ui",self)
         self.__ventana_login = ppal
         self.setup()
 
-    def stup(self):
+    def setup(self):
         self.comboBox.currentIndexChanged.connect(self.cargar)
         self.carpeta = 'c:/Users/David.R/Documents/entregable final/Circle of Willis'
         lista_archivos = os.listdir(self.carpeta)

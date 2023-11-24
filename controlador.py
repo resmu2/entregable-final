@@ -18,7 +18,7 @@ def main():
     modelo = Modelo()
     vista = Vista()
     mi_controlador = Controlador(modelo,vista)
-    vista.addControler(mi_controlador)
+    Vista(mi_controlador)
     vista.show()
     sys.exit(app.exec_())
 
