@@ -16,7 +16,9 @@ class Modelo():
         nombre = info.PatientName
         ID = info.PatientID
         P_body = info.BodyPartExamined
-        return f'Nombre del paciente: {nombre}\nId del paciente: {ID}\nParte del cuerpo: {P_body}'
+        date = info.StudyDate
+        position = info.PatientPosition
+        return f'Nombre del paciente: {nombre}\nId del paciente: {ID}\nParte del cuerpo: {P_body}\nFecha del estudio: {date}\nPosicion del paciente: {position}'
     
     def credenciales(self,user,password):
         if user == 'medicoAnalitico' and password == 'bio12345':
