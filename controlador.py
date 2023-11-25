@@ -8,17 +8,23 @@ class Controlador:
         self.vista = vista
 
     def img(self,imagen):
-        self.modelo.picture_img(imagen)
+        return self.modelo.picture_img(imagen)
     
     def info_P(self,data):
-        self.modelo.Info(data)
+        return self.modelo.Info(data)
+    
+    def autenticacion(self,user,password):
+        return self.modelo.credenciales(user,password)
+    
+    def direccion(self,info):
+        self.modelo.addcarpeta(info)
 
 def main():
     app = QApplication(sys.argv)
     modelo = Modelo()
     vista = Vista()
     mi_controlador = Controlador(modelo,vista)
-    Vista(mi_controlador)
+    vista.controlador(mi_controlador)
     vista.show()
     sys.exit(app.exec_())
 
