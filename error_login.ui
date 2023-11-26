@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Form</class>
@@ -7,13 +6,26 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
+    <width>412</width>
     <height>88</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>361</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Usuario y/o contraseña incorrectos, por favor intente de nuevo</string>
+   </property>
+  </widget>
   <widget class="QPushButton" name="aceptar">
    <property name="geometry">
     <rect>
@@ -23,81 +35,11 @@
      <height>21</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>7</pointsize>
-    </font>
-   </property>
    <property name="text">
     <string>Aceptar</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>20</y>
-     <width>301</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Usuario y/o contraseña no validos, intente de nuevo</string>
    </property>
   </widget>
  </widget>
  <resources/>
  <connections/>
 </ui>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>400</width>
-    <height>88</height>
-   </rect>
-  </property>
-  <property name="windowTitle">
-   <string>Form</string>
-  </property>
-  <widget class="QPushButton" name="aceptar">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>60</y>
-     <width>93</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>7</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Aceptar</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>20</y>
-     <width>301</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Usuario y/o contraseña no validos, intente de nuevo</string>
-   </property>
-  </widget>
- </widget>
- <resources/>
- <connections/>
-</ui>
->>>>>>> c1b5300f0237238f14d0d3b8b6e5af314ff76070

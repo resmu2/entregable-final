@@ -94,7 +94,7 @@ class MplCanvas(FigureCanvas):
 class Error_ruta(QDialog):
     def __init__(self,ppal=None):
         super().__init__(ppal)
-        loadUi("c:/Users/David.R/Documents/entregable final/error_ruta.ui",self)
+        loadUi("c:/Users/David.R/Documents/entregable final/Error_carpeta.ui",self)
         self.setup()
 
     def setup(self):
@@ -106,7 +106,7 @@ class Error_ruta(QDialog):
 class Error_img(QDialog):
     def __init__(self,ppal=None):
         super().__init__(ppal)
-        loadUi("c:/Users/David.R/Documents/entregable final/error_img.ui",self)
+        loadUi("c:/Users/David.R/Documents/entregable final/Error_img.ui",self)
         self.setup()
 
     def setup(self):
@@ -118,7 +118,7 @@ class Error_img(QDialog):
 class Error_login(QDialog):
     def __init__(self,ppal=None):
         super().__init__(ppal)
-        loadUi("c:/Users/David.R/Documents/entregable final/error_login.ui",self)
+        loadUi("c:/Users/David.R/Documents/entregable final/Error_Login.ui",self)
         self.setup()
 
     def setup(self):
